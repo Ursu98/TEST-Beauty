@@ -53,6 +53,11 @@ body {
 	cursor: pointer;
 	color: #333333;
 }
+.header__search_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
 .header__search {
 	display: flex;
@@ -105,9 +110,6 @@ body {
 	width: 20px;
 }
 
-.header__search_phone {
-	margin-right: 40px;
-}
 .header__search_phone a,
 .header__search_feedback a {
 	text-decoration: none;
@@ -222,11 +224,17 @@ body {
 	background-color: #ffffff;
 }
 @media only screen and (max-width: 1024px) {
+	.header__search_input {
+		margin: auto !important;
+	}
 	.header__search_logo_name {
 		display: none;
 	}
 	.header__search_phone {
 		display: none;
+	}
+	.header__search_phone a {
+		margin: 0;
 	}
 	.header__search_feedback {
 		text-align: center;
@@ -242,10 +250,24 @@ body {
 	}
 	.header__nav_bar_item {
 		margin: auto !important;
+		margin-bottom: 10px !important;
 	}
 	.product__special-offers {
 		width: 46%;
 		margin-bottom: 8%;
+	}
+	.header__head_list {
+		display: block;
+		columns: 2;
+		-webkit-column: 2;
+		-moz-columns: 2;
+		column-gap: 150px;
+		text-align: center;
+	}
+	.header__head_item {
+		font-size: 12px;
+		margin: auto !important;
+		margin-bottom: 10px !important;
 	}
 }
 @media only screen and (max-width: 600px) {
@@ -255,10 +277,18 @@ body {
 	}
 }
 @media only screen and (max-width: 425px) {
+	.header__search {
+		width: 100%;
+	}
 	.header__nav_bar_list {
 		columns: 1;
 		-webkit-columns: 1;
 		-moz-columns: 1;
+	}
+
+	.product__special-offers {
+		width: 92%;
+		margin-bottom: 8%;
 	}
 }
 
