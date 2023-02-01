@@ -25,20 +25,20 @@ body {
 }
 
 .header__head_list {
-	padding: 0;
-	list-style-type: none;
-	display: flex;
-	width: fit-content;
-	margin: 17px auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: fit-content;
+  margin: 17px auto;
 }
 
 .header__head_item {
-	margin-right: 30px;
-	color: #333333;
+  margin-right: 30px;
+  color: #333333;
 }
 
 .header__head_item:last-child {
-	margin: 0;
+  margin: 0;
 }
 
 .header__head_item a {
@@ -103,7 +103,7 @@ body {
   width: 20px;
 }
 .header__search_phone {
-	margin-right: 40px;
+  margin-right: 40px;
 }
 .header__search_phone a,
 .header__search_feedback a {
@@ -118,18 +118,18 @@ body {
 }
 
 .header__nav_bar_list {
-	padding: 0;
-	list-style-type: none;
-	display: flex;
-	margin: 30px auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin: 30px auto;
 }
 
 .header__nav_bar_item {
-	margin-right: 40px;
+  margin-right: 40px;
 }
 
 .header__nav_bar_item:last-child {
-	margin: 0;
+  margin: 0;
 }
 
 .header__nav_bar_item a {
@@ -139,13 +139,13 @@ body {
 }
 
 .super__offer {
-	background-image: url(/img/Rectangle\ 2.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 600px;
-	display: flex;
-	margin-bottom: 80px;
+  background-image: url(/img/Rectangle\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  margin-bottom: 80px;
 }
 .super__offer_content {
   color: white;
@@ -210,8 +210,8 @@ body {
   background-color: #ffffff;
 }
 .product__special-offers > img {
-	margin: 20px 20px 20px 20px;
-	max-width: 100%;
+  margin: 20px 20px 20px 20px;
+  max-width: 100%;
 }
 @media only screen and (max-width: 1024px) {
   .header__search_input {
@@ -261,14 +261,16 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
-
-	.super__offer {
-		background-position: 60%;
-	}
-	.product__special-offers {
-		width: 92%;
-		margin-bottom: 8%;
-	}
+  .header__search {
+    width: 90%;
+  }
+  .super__offer {
+    background-position: 60%;
+  }
+  .product__special-offers {
+    width: 92%;
+    margin-bottom: 8%;
+  }
 }
 @media only screen and (max-width: 425px) {
   .header__search {
