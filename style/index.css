@@ -613,7 +613,14 @@ body {
   }
 }
 
+
 .container__services {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container__table {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -623,74 +630,69 @@ body {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  min-width: 310px;
 }
 
 .flex__container {
   display: flex;
+  min-width: 310px;
 }
 
 .message__style {
-  background: #f13c6e;
+  background: #F13C6E;
   width: 49%;
 }
 
 .message__header {
   display: flex;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: #ffffff;
-  padding: 35px 20px 15px 40px;
+  color: #FFFFFF;
+  /* padding: 35px 20px 15px 40px; */
 }
 
 .message__text {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  padding: 0 0 0 40px;
+  /* padding: 0 0 0 40px; */
   width: 231px;
   height: 40px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .message__input {
   padding: 30px 0 0 20px;
 }
 
+.impuls__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .message__input__style {
   width: 60%;
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 30px;
   border: none;
   padding: 7px 25px 7px 25px;
 }
 
 .message__input__placeholder {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   padding-left: 30px;
 
-  color: #c4c4c4;
-}
-
-.message__img {
-  display: flex;
-  justify-content: baseline;
-  padding: 30px 25px 30px 0;
-}
-
-.message__img__style {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  color: #C4C4C4;
 }
 
 .message__container__child {
@@ -699,46 +701,47 @@ body {
 }
 
 .gap {
-  gap: 4%;
+  gap: 4%
 }
 
 .message__header {
   display: flex;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: #ffffff;
-  padding: 35px 0 0 20px;
+  color: #FFFFFF;
 }
+
 
 .shipping__header {
   display: flex;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  color: #ffffff;
-  /* padding: 35px 0 0 20px; */
+  color: #FFFFFF;
   padding: 35px 20px 15px 40px;
 }
 
 .message__text {
-  font-family: "Roboto";
+  display: flex;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  padding: 20px 100px 10px 20px;
-  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: #FFFFFF;
 }
 
 .shipping__text {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   padding: 20px 100px 10px 20px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .shipping__btn {
@@ -746,11 +749,12 @@ body {
 }
 
 .shipping__btn__style {
-  background: #f13c6e;
-  border: 2px solid #ffffff;
+  background: #F13C6E;
+  border: 2px solid #FFFFFF;
   border-radius: 30px;
   padding: 7px 28px 7px 29px;
   color: rgba(255, 255, 255, 1);
+
 }
 
 .van {
@@ -759,10 +763,13 @@ body {
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
+  
 }
 
 .van__style {
   max-width: 100%;
+  width: 10%;
+  height: 70%;
   display: flex;
   justify-content: end;
   align-items: flex-end;
@@ -807,40 +814,26 @@ body {
   border-left-style: none;
 }
 
-.impuls__bottom {
+.inpuls__border__bottom__bottom {
   border: 1px solid rgba(239, 239, 239, 1);
   border-top-style: none;
-  border-right-style: none;
   border-left-style: none;
+  border-right-style: none;
+}
+
+.impuls__bottom {
+      border: 1px solid rgba(239, 239, 239, 1);
+      border-top-style: none;
+      border-right-style: none;
+      border-left-style: none;
 }
 
 .inpuls__border__left {
   border-left-style: 1px solid rgba(239, 239, 239, 1);
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-}
-
 .border1 {
   border: 1px solid black;
-}
-
-.grid {
-  display: grid;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-}
-
-.grid-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.box {
-  padding-bottom: 100px;
 }
 
 .border1 {
@@ -848,10 +841,11 @@ body {
 }
 
 .impuls-x {
-  padding: 20px 60px 20px 60px;
+  padding: 20px 60px 20px 60px
 }
 
 .impuls__bg {
+  width: 60%;
   background-color: white;
 }
 
@@ -863,148 +857,204 @@ body {
   max-width: 100%;
 }
 
-@media only screen and (max-width: 1250px) {
-  .grid {
-    display: grid;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-  }
-
-  .grid-4 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
+@media only screen and (max-width: 1750px) {
   .shipping__header {
-    display: flex;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #ffffff;
-    padding: 35px 20px 15px 20px;
+      display: flex;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      color: #FFFFFF;
+      padding: 35px 20px 15px 20px;
   }
 
   .message__text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 20px 10px 10px 20px;
-    color: #ffffff;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      padding: 20px 10px 10px 20px;
+      color: #FFFFFF;
   }
 
   .shipping__text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 20px 10px 10px 20px;
-    color: #ffffff;
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      padding: 20px 10px 10px 20px;
+      color: #FFFFFF;
   }
 
   .impuls-x {
-    padding: 20px;
+      padding: 20px 60px 20px 60px
   }
   .van {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding: 0;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding: 0;
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px;
   }
 
   .van__style {
-    max-width: 100%;
-    display: flex;
+      max-width: 100%;
+      display: flex;
   }
-
+  
   .container__child {
-    width: 60%;
-    display: flex;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      
   }
-
+  
   .flex__container {
-    display: flex;
-  }
-
-  .message__style {
-    background: #f13c6e;
-    width: 49%;
-    flex-flow: column wrap;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-
-    /* text-align: center; */
+      display: flex;
   }
 
   .message__input {
-    padding: 0;
-    display: flex;
-    justify-content: center;
+      padding: 0;
+      display: flex;
+      justify-content: center;
   }
-
+  
   .message__input__style {
-    width: 60%;
-    /* height: 100%; */
-    background: #ffffff;
-    border-radius: 30px;
-    border: none;
-    padding: 7px 25px 7px 25px;
+      width: 60%;
+      background: #FFFFFF;
+      border-radius: 30px;
+      border: none;
+      padding: 7px 25px 7px 25px;
   }
-
+  
   .message__input__placeholder {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    padding-left: 30px;
-
-    color: #c4c4c4;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      padding-left: 30px;
+  
+      color: #C4C4C4;
   }
-
+  
   .message__img {
-    display: flex;
-    justify-content: center;
-    padding: 0;
+      display: flex;
+      justify-content: center;
+      padding: 0;
   }
 
   .message__header {
-    display: flex;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #ffffff;
-    padding: 35px 0 0 10px;
+      display: flex;
+      justify-content: center;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      color: #FFFFFF;
+      padding: 25px 0 0 10px;
   }
 
   .shipping__btn {
-    padding: 0 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+      padding: 0 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
   }
 
   .shipping__btn__style {
-    background: #f13c6e;
-    border: 2px solid #ffffff;
-    border-radius: 30px;
-    padding: 7px 10px 7px 29px;
-    color: rgba(255, 255, 255, 1);
+      background: #F13C6E;
+      border: 2px solid #FFFFFF;
+      border-radius: 30px;
+      padding: 7px 10px 7px 10px;
+      color: rgba(255, 255, 255, 1);
+  
   }
 
   .message__img__style {
-    max-width: 70%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
+      max-width: 70%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+  }
+
+  .container__child {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+  }
+
+  .message__style {
+      background: #F13C6E;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .impuls__row {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      align-items: center;
+  }
+
+  .inpuls__border__bottom {
+    border: 1px solid rgba(239, 239, 239, 1);
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+  }
+
+  .inpuls__border__right {
+    border: 1px solid rgba(239, 239, 239, 1);
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+  }
+
+  .inpuls__border__bottom__bottom {
+    border: 1px solid rgba(239, 239, 239, 1);
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .impuls__row {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container__child {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .message__style {
+      background: #F13C6E;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
   }
 }
