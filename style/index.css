@@ -425,6 +425,7 @@ body {
 	height: 21px;
 	display: flex;
 	flex-direction: row;
+    justify-content: center;
 }
 .footer__phone {
 	color: black;
@@ -461,6 +462,10 @@ body {
 		width: 40px;
 		height: 37px;
 	}
+    .footer__img {
+        display: flex;
+        justify-content: center;
+    }
 	.footer__sites {
 		width: 33%;
 		display: flex;
@@ -508,6 +513,7 @@ body {
     .footer__paragraph {
         font-size: 10px;
     }
+
 }
 @media only screen and (max-width: 600px) {
     .footer__container {
@@ -520,10 +526,12 @@ body {
     }
     .footer__title {
         font-size: 16px;
+        align-self: center;
     }
     .footer__paragraph {
         font-size: 12px;
         text-align: center;
+        align-self: center;
     }
     .footer__category {
         display: flex;
@@ -561,4 +569,18 @@ body {
         align-items: center;
         text-align: center;
     }
+    .footer__instagram, .footer__vk, .footer__youtube, .footer__facebook {
+        width: 37px;
+        height: 33px;
+    }
+    .footer__img {
+        width: 13px;
+        height: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__button {
+        align-self: center;
+    }
+
 }
