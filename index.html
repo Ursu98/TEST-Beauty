@@ -1,117 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Electrolize&family=Rajdhani:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header__container">
-      <div class="header__head">
-        <ul class="header__head_list">
-          <li class="header__head_item"><a href="#">Доставка</a></li>
-          <li class="header__head_item"><a href="#">Оплата</a></li>
-          <li class="header__head_item"><a href="#">Отзывы</a></li>
-          <li class="header__head_item"><a href="#">Вопрос-ответ</a></li>
-          <li class="header__head_item"><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-      <div class="header__search">
-        <div class="header__search_logo">
-          <a href="#">
-            <img class="header__search_logo_image" src="./img/logo.png" />
-          </a>
-          <p class="header__search_logo_name"><a href="#">BEAUTY</a></p>
-        </div>
-        <input class="header__search_input" />
-        <p class="header__search_phone">8 (812) 123-45-67</p>
-        <p class="header__search_feedback">Обратный звонок</p>
-      </div>
-      <hr />
-      <div class="header__nav_bar">
-        <ul class="header__nav_bar_list">
-          <li class="header__nav_bar_item"><a href="#">Парикмахерская</a></li>
-          <li class="header__nav_bar_item"><a href="#">Барбершоп</a></li>
-          <li class="header__nav_bar_item"><a href="#">Маникюр</a></li>
-          <li class="header__nav_bar_item"><a href="#">Педикюр</a></li>
-          <li class="header__nav_bar_item"><a href="#">Массаж</a></li>
-          <li class="header__nav_bar_item"><a href="#">Мебель</a></li>
-        </ul>
-      </div>
-    </header>
-    <div class="special-offers-text__container">
-      <div class="special-offers-text">
-        <p>Специальные предложения</p>
-      </div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="style/index.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Electrolize&family=Rajdhani:wght@500&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header__container">
+			<div class="header__head">
+				<ul class="header__head_list">
+					<li class="header__head_item"><a href="#">Доставка</a></li>
+					<li class="header__head_item"><a href="#">Оплата</a></li>
+					<li class="header__head_item"><a href="#">Отзывы</a></li>
+					<li class="header__head_item"><a href="#">Вопрос-ответ</a></li>
+					<li class="header__head_item"><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div style="width: 100%; justify-content: center; display: flex">
+				<div class="header__search">
+					<div class="header__search_logo">
+						<a href="#">
+							<img
+								class="header__search_logo_image"
+								src="./img/logo.png" />
+						</a>
+						<p class="header__search_logo_name"><a href="#">BEAUTY</a></p>
+					</div>
+					<input class="header__search_input" />
+					<p class="header__search_phone"><a href="#">8 (812) 123-45-67</a></p>
+					<p class="header__search_feedback"><a href="#">Обратный звонок</a></p>
+				</div>
+			</div>
+			<hr />
+			<div class="header__nav_bar">
+				<ul class="header__nav_bar_list">
+					<li class="header__nav_bar_item"><a href="#">Парикмахерская</a></li>
+					<li class="header__nav_bar_item"><a href="#">Барбершоп</a></li>
+					<li class="header__nav_bar_item"><a href="#">Маникюр</a></li>
+					<li class="header__nav_bar_item"><a href="#">Педикюр</a></li>
+					<li class="header__nav_bar_item"><a href="#">Массаж</a></li>
+					<li class="header__nav_bar_item"><a href="#">Мебель</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="super__offer">
+			<div class="super__offer_content">
+				<h1 class="super__offer_content_title">Супер кресло</h1>
+				<p class="super__offer_content_desc">
+					Текст акции всегда отражает суть, а не просто
+					<br />
+					болтовню, поэтому внимательнее.
+				</p>
+				<button class="super__offer_content_btn">
+					<a href="#">Подробнее</a>
+				</button>
+			</div>
+		</div>
+		<div class="special-offers-text__container">
+			<div class="special-offers-text">
+				<p>Специальные предложения</p>
+			</div>
+		</div>
 
-    <div class="offers-container">
-      <div class="offers-container__product">
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-      </div>
-    </div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam
-    tempore voluptate et eos ab temporibus totam debitis suscipit deleniti non,
-    soluta consequuntur quas at blanditiis aperiam delectus quis ipsum!
-    <div class="offers-container">
-      <div class="offers-container__product">
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-        <div class="product__special-offers">
-          <img src="img/product.png" alt="" />
-          <p>Парикмахерское кресло «Норм» гидравлическое</p>
-          <p>9 900 ₽</p>
-          <button class="btn-buy">Купить</button>
-        </div>
-      </div>
-    </div>
-    <script src="index.js"></script>
-  </body>
+		<div class="offers-container">
+			<div class="offers-container__product">
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+			</div>
+		</div>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quisquam
+		tempore voluptate et eos ab temporibus totam debitis suscipit deleniti non,
+		soluta consequuntur quas at blanditiis aperiam delectus quis ipsum!
+		<div class="offers-container">
+			<div class="offers-container__product">
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+				<div class="product__special-offers">
+					<img
+						src="img/product.png"
+						alt="" />
+					<p>Парикмахерское кресло «Норм» гидравлическое</p>
+					<p>9 900 ₽</p>
+					<button class="btn-buy">Купить</button>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>
